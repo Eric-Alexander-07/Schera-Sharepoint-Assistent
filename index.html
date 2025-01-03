@@ -6,56 +6,8 @@
   <title>Voiceflow Assistant</title>
 </head>
 <body>
-<div id="voiceflow-container"></div>
-<script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '67763ec39c5724d582f7d134' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production',
-          settings: {
-            openOnLoad: false  // Chat bleibt zunächst minimiert
-          }
-        });
-      };
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
-      v.type = "text/javascript"; 
-      s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
-  <style>
-  #voiceflow-container {
-      position: fixed;
-      bottom: 20px; /* Abstand vom unteren Rand */
-      right: 20px;  /* Abstand vom rechten Rand */
-      width: 60px;  /* Standardbreite für minimiertes Widget */
-      height: 60px; /* Standardhöhe für minimiertes Widget */
-      z-index: 1000; /* Über andere Elemente legen */
-      cursor: pointer; /* Zeigt interaktive Fläche an */
-  }
-
-  /* Chatbot erweitern, wenn geöffnet */
-  #voiceflow-container.open {
-      width: 400px;  /* Breite für erweitertes Fenster */
-      height: 500px; /* Höhe für erweitertes Fenster */
-  }
-</style>
-<script>
-  document.getElementById('voiceflow-container').addEventListener('click', function() {
-      const container = this;
-
-      // Wechsel zwischen minimiert und maximiert
-      if (container.classList.contains('open')) {
-          container.classList.remove('open');
-      } else {
-          container.classList.add('open');
-      }
-  });
-</script>
-
-  <!-- <div id="voiceflow-widget"></div>
+<div>Hallo</div>
+<div id="voiceflow-widget"></div>
   <script type="text/javascript">
     (function(d, t) {
         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -68,6 +20,6 @@
         }
         v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
     })(document, 'script');
-  </script> --> 
+  </script>
 </body>
 </html>
